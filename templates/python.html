@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<title>Instalando Python</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+            <a href=""><img src="../static/img/logotipo1.png" class="logo"  /></a>
+                <ul>
+                	<li><a href="{{url_for('home')}}" >Inicio</a></li>
+					<li><a href="{{url_for('instalacion')}}" >Instalación</a></li>
+                </ul>
+            </header>
+			<div class="main">
+				<div class="inner">
+					<div class="col-1">
+						<a href="https://www.python.org/"><img src="../static/img/logopy.png" width="150px"/></a>
+					</div>
+					<div class="col-1">
+						<h2>¡Instalando Python!</h2>
+						<p>Linux: Sistemas operativos como Linux traen el Python 2.7.x de forma prediterminada, para probar si en verdad esta instalado, puede abrir
+						la consola y escribir python, esto le mostrará si Python está instalado en su computadora</p>
+						<p>Mac/Windows: Descargue <a href="https://www.python.org/download/releases/2.7.7/">Python-2.7.7</a>, ejecútelo y siga los pasos de
+						instalación del programa</p>
+						<br>
+						<h2>¡Instalando Flask!</h2>
+						<p>Flask es el mini-framework utilizado en Andrei's Web Desing, por lo que es necesario para ejecutar el programa</p>
+						<p>Si esta en Linux/Mac puede utilizar el comando: <br><b>$ sudo pip install Flask</b></p>
+						<p>En  Windows, puede ejecutar el comando en la cmd con permisos de administrador: <br><b>$ pip install Flask</b><br>En caso de que no tenga el comando pip, 
+						puede leer la siguiente <a href="http://flask.pocoo.org/docs/installation/#windows-easy-install">guía</a> para instalarlo.
+						
+					</div>
+					<div class="col-4">
+						<a href="http://www.smlnj.org/"><img src="../static/img/sml.png" width="200px" /></a>
+					</div>
+				</div>
+			</div>
+			
+            <div class="clr"></div>
+			<footer> 
+                <div class="mainFooter">
+                <div class="privHold">
+                 </div>
+                 </div>
+			</footer>
+            </div>
+	</div>
+		
+	</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<title>Inicio</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+            <a href=""><img src="../static/img/logotipo1.png" class="logo"  /></a>
+                <ul>
+                	<li><a href="" class="active">Inicio</a></li>
+					<li><a href="{{url_for('instalacion')}}" >Instalación</a></li>
+                </ul>
+            </header>
+			<div class="main">
+				<div class="inner">
+					<div class="col-1">
+						<a href="https://www.python.org/"><img src="../static/img/logopy.png" width="150px"/></a>
+					</div>
+					<div class="col-1">
+						<h2>Seleccione un archivo para continuar</h2>
+						<div class="col-3">
+                            <form method="post" action="{{url_for('tabla')}}">
+								<fieldset class="info_fieldset" style="border:none;">
+                                    <div class="form_row">
+										<input type="file" name="name" required>
+                                    </div>
+									 <div class="form_row">
+										<input type="submit"  class="form_submit" id="submit" value="¡Listo!" /> 
+                                    </div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<div class="col-4">
+						<a href="http://www.smlnj.org/"><img src="../static/img/sml.png" width="200px" /></a>
+					</div>
+				</div>
+			</div>
+			
+            <div class="clr"></div>
+			<footer> 
+                <div class="mainFooter">
+                <div class="privHold">
+                 </div>
+                 </div>
+			</footer>
+            </div>
+	</div>
+		
+	</body>
+
+</html>

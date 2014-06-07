@@ -1,0 +1,37 @@
+{% block content %}
+<!DOCTYPE html>
+<html Lang="es">
+	<head>  
+		<meta charset='utf-8'>
+		<title>Inicio</title>
+		<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong>
+		<link rel="stylesheet" href="stylesheet2.css">
+	</head>
+	<body>
+	<class="outer">
+		<a href=""><img src="../static/img/logotipo1.png" class="logo"/></a>
+		<div id='contenido'>
+			<header>
+				<nav>
+					<ul>
+						<li><a href="">Ingresa Restaurante</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<div id='textoPr'>
+					<article>
+					<hgroup> 
+						<h1>Ingrese los datos solicitados. No distingue mayúsculas</h1>
+					</hgroup>
+						<h1>Frase del Día</h1>
+                        <p>"Existen 10 tipos de personas: Las que entienden binario y las que no."</p>
+                        <p> -Anónimo</p>
+					</p>
+					</article>
+			</div>
+			</section>		
+		</div>
+	</body>
+</html>
+{% endblock %}

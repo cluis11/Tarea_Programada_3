@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<title>Instalando SML/NJ</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+            <a href=""><img src="../static/img/logotipo1.png" class="logo"  /></a>
+                <ul>
+                	<li><a href="{{url_for('home')}}" >Inicio</a></li>
+					<li><a href="{{url_for('instalacion')}}" >Instalación</a></li>
+                </ul>
+            </header>
+			<div class="main">
+				<div class="inner">
+					<div class="col-1">
+						<a href="https://www.python.org/"><img src="../static/img/logopy.png" width="150px"/></a>
+					</div>
+					<div class="col-1">
+						<h2>¡Instalación de SML/NJ!</h2>
+						<p>Linux: Revisar si distribución de Linux tiene un paquete disponible para SML/NJ. En caso de 
+						que no tenga, seguir las instrucciones de instalación de <a href="http://smlnj.cs.uchicago.edu/dist/working/110.76/config.tgz">SML/NJ</a></p>
+						<p>Windows: Bajar e instalar <a href="http://smlnj.cs.uchicago.edu/dist/working/110.76/smlnj.msi">smlnj.msi</a></p>
+						<p>Mac OS X: Bajar el instalar el <a href="http://smlnj.cs.uchicago.edu/dist/working/110.76/smlnj-x86-110.76.pkg">dmg</a></p>
+						<p>Para revisar si SML se instaló bien, abrir la consola, digitar sml y se debería mostrar:<br>
+						<b>Standard ML of New Jersey ...<b></p>
+					</div>
+					<div class="col-4">
+						<a href="http://www.smlnj.org/"><img src="../static/img/sml.png" width="200px" /></a>
+					</div>
+				</div>
+			</div>
+			
+            <div class="clr"></div>
+			<footer> 
+                <div class="mainFooter">
+                <div class="privHold">
+                 </div>
+                 </div>
+			</footer>
+            </div>
+	</div>
+		
+	</body>
+
+</html>
